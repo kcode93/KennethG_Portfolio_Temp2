@@ -1,3 +1,4 @@
+//Hamburger Menu
 .menu-btn {
 	position: absolute;
 	z-index: 3;
@@ -32,6 +33,107 @@
 			//line three
 			&:nth-child(3) {
 				transform: rotate(-45deg) translate(15px, -15px);
+			}
+		}
+	}
+}
+
+//Menu-Overlay
+.menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	opacity: 0.9;
+	visibility: hidden;
+	@include navItem_transition_delay;
+
+	&.show {
+		visibility: visible;
+	}
+
+	&-brand,
+	&-nav {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		float: left;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	&-nav {
+		margin: 0;
+		padding: 0;
+		background-color: darken($secondary-color, 6);
+		opacity: 0.8;
+		//takes it off the view port upwards
+		transform: translate3d(0, -100%, 0);
+		@include ease-in-out;
+
+		&.show {
+			//Slide from top
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	&-brand {
+		margin: 0;
+		padding: 0;
+		background-color: darken($secondary-color, 10);
+		//takes it off the view port downwards
+		transform: translate3d(0, 100%, 0);
+		@include ease-in-out;
+
+		&.show {
+			//Slide from top
+			transform: translate3d(0, 0, 0);
+		}
+
+		.portrait {
+			width: 300px;
+			height: 300px;
+			background-image: $profile-pic;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 50%;
+			border: solid 4px $primary-color;
+		}
+	}
+
+	.nav-item {
+		transform: translate3d(600px, 0, 0);
+		@include ease-in-out;
+
+		&.show {
+			//Slide from side
+			transform: translate3d(0, 0, 0);
+		}
+
+		.nav-link {
+			display: inline-block;
+			position: relative;
+			font-size: 2rem;
+			text-transform: uppercase;
+			padding: 0.3rem 1rem;
+			margin-bottom: 0.5rem;
+			font-weight: bold;
+			color: #fff;
+			text-decoration: none;
+			@include ease-in-out;
+			border: 0.2rem transparent solid;
+
+			&.current {
+				color: $primary-color;
+				border: 0.2rem solid $primary-color;
+			}
+
+			&:hover {
+				color: $primary-color;
+				border: 0.2rem solid $primary-color;
 			}
 		}
 	}
