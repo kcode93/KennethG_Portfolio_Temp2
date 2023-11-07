@@ -1,0 +1,54 @@
+//Wide Screens
+@include Xl-Devices {
+}
+
+//Desktop & Laptops
+@include Lg-Devices {
+}
+
+//Tablets & Small Laptops
+@include Md-Devices {
+	#home {
+		align-items: center;
+		text-align: center;
+
+		.lg-heading {
+			line-height: 1;
+			margin-bottom: 1rem;
+		}
+	}
+
+	ul.menu-nav,
+	div.menu-brand {
+		float: none;
+		width: 100%;
+		min-height: 0;
+
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	.menu-nav {
+		height: 75vh;
+		transform: translate3d(-100%, 0, 0);
+		font-size: 24px;
+	}
+
+	.menu-brand {
+		height: 25vh;
+		transform: translate3d(100%, 0, 0);
+
+		.portrait {
+			width: 200px;
+			height: 200px;
+		}
+	}
+}
+
+//Small Devices & Phones
+@include Sm-Devices {
+	#home h1 {
+		max-resolution: 10vh;
+	}
+}

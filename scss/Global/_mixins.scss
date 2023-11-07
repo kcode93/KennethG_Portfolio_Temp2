@@ -31,3 +31,28 @@
 		}
 	}
 }
+
+//Media Queries
+@mixin Sm-Devices {
+	@media only screen and (max-width: 600px) {
+		@content;
+	}
+}
+
+@mixin Md-Devices {
+	@media only screen and (max-width: 800px) {
+		@content;
+	}
+}
+
+@mixin Lg-Devices {
+	@media only screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin Xl-Devices {
+	@media only screen and (min-width: 1201px) {
+		@content;
+	}
+}
