@@ -10,52 +10,74 @@
 			content="Web Dev, Portfolio, Web Design, Web Development, website, UX, UI"
 		/>
 		<meta name="author" content="Kenneth Garcia" />
+		<!--Font Awesome CDN-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!--Custom style sheets-->
 		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
 		<title>Kenneth Garcia | Home</title>
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<nav id="navbar">
-					<div id="logo">
-						<img
-							src="./resources/img/img-name-Here"
-							width="100px"
-							height="100px"
-						/>
-					</div>
-					<!--end of navbar-->
-					<ul id="nav-list">
-						<li class="nav-item"><a href="#">Home</a></li>
-						<li class="nav-item"><a href="#">Services</a></li>
-						<li class="nav-item"><a href="#">About Us</a></li>
-						<li class="nav-item"><a href="#">Contact Us</a></li>
-					</ul>
-					<!--end of nav-list-->
-				</nav>
-				<!--end of nav-->
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
 			</div>
-			<!--end of container-->
+
+			<nav class="menu">
+				<div class="menu-brand">
+					<div class="portrait"></div>
+				</div>
+
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a href="/" class="nav-link current">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/about.html" class="nav-link current">ABOUT ME</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/mywork.html" class="nav-link current">MY WORK</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/contactme.html" class="nav-link current">CONTACT ME</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 
-		<main>
-			<div class="container">
-				<h1>Hello World!</h1>
-			</div>
-			<!--end of container-->
-		</main>
+		<main id="home">
+			<h1 class="lg-heading">
+				Kenneth <span class="txt-secondary">Garcia</span>
+			</h1>
 
-		<footer>
-			<div class="container">
-				<div id="social-media">
-					<h2>Social Links Here</h2>
-				</div>
-				<!--end of social-->
-				<p>Company-Name-Here, Copyright &copy; Year-Here</p>
+			<h2 class="sm-heading">
+				UX/UI Designer, Web Developer, and E-commerce Guru
+			</h2>
+
+			<div class="icons">
+				<a href="#">
+					<i class="fab fa-twitter fa-2x"></i>
+				</a>
+
+				<a href="#">
+					<i class="fab fa-facebood fa-2x"></i>
+				</a>
+
+				<a href="#">
+					<i class="fab fa-linkedin fa-2x"></i>
+				</a>
+
+				<a href="#">
+					<i class="fab fa-github fa-2x"></i>
+				</a>
 			</div>
-			<!--end of container-->
-		</footer>
+		</main>
 
 		<script src="./resources/js/main.js"></script>
 	</body>
