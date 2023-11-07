@@ -1,0 +1,9 @@
+body {
+	@include bd-background;
+	font-family: $primary-Font;
+	color: $body-font-color;
+	background-color: $dark-color;
+	height: 100%;
+	line-height: 1.5;
+	//margin: 0;
+}

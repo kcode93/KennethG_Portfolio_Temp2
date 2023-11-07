@@ -126,3 +126,64 @@ table {
 * {
   box-sizing: border-box;
   /*overflow: hidden;*/ }
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #1a1a1a;
+  height: 100%;
+  line-height: 1.5; }
+  body#bg-image {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    body#bg-image .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+#home {
+  padding: 4rem;
+  height: 100%;
+  overflow: hidden; }
+  #home h1 {
+    margin-top: 20vh; }
+  #home .icons {
+    margin-top: 1rem; }
+    #home .icons a {
+      padding: 0.4rem;
+      transition: all 0.5s ease-in-out; }
+      #home .icons a:hover {
+        color: #17a2b8; }
+
+h1,
+h2,
+h3 {
+  font-weight: bold; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 6rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 0; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+.txt-secondary {
+  color: #17a2b8; }

@@ -1,2 +1,35 @@
+//Font-Family
 $primary-Font: 'Poppins', sans-serif;
 $Secondary-Font: 'Montserrat', sans-serif;
+
+//Colors
+$primary-color: #17a2b8;
+$secondary-color: #b82d17;
+$body-font-color: #fff;
+
+$black-color: #000;
+$white-color: #fff;
+$light-color: #f1f1f1e7;
+$dark-color: #1a1a1a;
+
+$success-color: #28a745;
+$warning-color: #f9f65c;
+$danger-color: #dc3545;
+
+$primary-border-color: #ccc;
+$secondary-border-color: #333;
+$transparent-cover: rgba(0, 0, 0, 0.4);
+
+$twitter-color: #38a1f3;
+$facebook-color: #3b5998;
+$instagram-color: #3f729b;
+$youtube-color: #c4302b;
+$linkedin-color: #0077b5;
+
+//width measurements
+$splash_topMargin: 20vh;
+
+//utilities
+$showHomeImg: true;
+$homeBackgroundImg: url(../img/background.jpg);
+$backgroundImgOpacity: 0.6;
