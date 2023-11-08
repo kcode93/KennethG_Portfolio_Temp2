@@ -1,5 +1,7 @@
 main {
-	@include sticky-footer;
+	&#about {
+		@include sticky-footer;
+	}
 }
 
 #home {

@@ -252,8 +252,8 @@ header {
         color: #17a2b8;
         border: 0.2rem solid #17a2b8; }
 
-main {
-  min-height: calc(100vh - $footer-height); }
+main#about {
+  min-height: calc(100vh - 65px); }
 
 #home {
   padding: 4rem;

@@ -68,5 +68,5 @@
 
 //for sticky footer
 @mixin sticky-footer {
-	min-height: calc(100vh - $footer-height);
+	min-height: calc(100vh - 65px);
 }
