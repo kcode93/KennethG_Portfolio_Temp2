@@ -4,3 +4,23 @@
 	background-color: $primary-color;
 	margin: 1rem 0;
 }
+
+.btn {
+	background-color: darken($primary-color, 5);
+	border: 3px transparent solid;
+	border-radius: 5px;
+	color: white;
+	padding: 15px 15px;
+	width: 12rem;
+	height: 4rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.2rem;
+	transition: all 0.8s;
+	margin: 0 1rem;
+
+	&:hover {
+		border: 3px solid #fff;
+	}
+}

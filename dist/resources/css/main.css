@@ -155,7 +155,7 @@ header {
 
 .menu-btn {
   position: absolute;
-  z-index: 3;
+  z-index: 9;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -176,6 +176,7 @@ header {
       transform: rotate(-45deg) translate(15px, -15px); }
 
 .menu {
+  z-index: 8;
   position: fixed;
   top: 0;
   width: 100%;
@@ -226,7 +227,7 @@ header {
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 50%;
-      border: solid 6px #1cc2dc;
+      border: solid 8px #292929;
       z-index: 4; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -307,8 +308,8 @@ main#about {
 #about .job {
   background-color: #272727;
   padding: 5rem;
-  border-bottom: 5px solid #17a2b8;
-  border-right: 5px solid #17a2b8;
+  border-bottom: 8px solid #17a2b8;
+  border-right: 8px solid #17a2b8;
   width: 80%;
   margin: 0 auto 2rem auto; }
   #about .job h3,
@@ -318,6 +319,88 @@ main#about {
     margin: 0.5rem 0; }
   #about .job h5 {
     font-weight: bold; }
+
+#gallery .bar {
+  margin-left: 2rem; }
+
+#gallery .lg-heading,
+#gallery .sm-heading {
+  padding: 0.5rem 2rem; }
+
+#gallery .container {
+  width: 80%;
+  margin: 2rem auto;
+  /*border: 1px solid var(--border-color);*/
+  overflow: hidden; }
+
+#gallery .grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem; }
+
+#gallery .grid-cell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative; }
+
+#gallery .grid-cell:hover {
+  cursor: pointer; }
+
+#gallery .overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all ease-in-out 0.5s; }
+
+#gallery .grid-cell:hover .overlay {
+  opacity: 1; }
+
+#gallery img {
+  width: 100%;
+  z-index: -1;
+  margin: auto;
+  transform: scale(1);
+  transition: all ease-in-out 0.5s; }
+
+#gallery .grid-cell:hover img {
+  transform: scale(1.1);
+  filter: blur(2px); }
+
+#gallery .image-details {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  z-index: 4;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+  width: 100%;
+  padding-bottom: 5px; }
+
+#gallery .image-details p {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem; }
+
+#gallery .grid-cell:hover .image-details {
+  top: 40%;
+  opacity: 1; }
+
+#gallery .inner-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%; }
 
 #main-footer {
   font-size: 1.5rem;
@@ -353,6 +436,23 @@ a {
   height: 0.8rem;
   background-color: #17a2b8;
   margin: 1rem 0; }
+
+.btn {
+  background-color: #148ea1;
+  border: 3px transparent solid;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 15px;
+  width: 12rem;
+  height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  transition: all 0.8s;
+  margin: 0 1rem; }
+  .btn:hover {
+    border: 3px solid #fff; }
 
 @media only screen and (max-width: 800px) {
   #home {

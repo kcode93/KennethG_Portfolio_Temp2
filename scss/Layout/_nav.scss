@@ -1,7 +1,7 @@
 //Hamburger Menu
 .menu-btn {
 	position: absolute;
-	z-index: 3;
+	z-index: 9;
 	right: 35px;
 	top: 35px;
 	cursor: pointer;
@@ -40,6 +40,7 @@
 
 //Menu-Overlay
 .menu {
+	z-index: 8;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -101,7 +102,7 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			border-radius: 50%;
-			border: solid 6px lighten($primary-color, 8);
+			border: solid 8px lighten($dark-color, 6);
 			z-index: 4;
 		}
 	}
