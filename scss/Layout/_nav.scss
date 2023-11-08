@@ -67,7 +67,7 @@
 	&-nav {
 		margin: 0;
 		padding: 0;
-		background-color: darken($secondary-color, 8);
+		background-color: lighten($dark-color, 6);
 		opacity: 0.97;
 		//takes it off the view port upwards
 		transform: translate3d(0, -100%, 0);
@@ -82,7 +82,7 @@
 	&-brand {
 		margin: 0;
 		padding: 0;
-		background-color: darken($secondary-color, 8);
+		background-color: darken($primary-color, 6);
 		opacity: 0.97;
 		//takes it off the view port downwards
 		transform: translate3d(0, 100%, 0);
@@ -101,7 +101,7 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			border-radius: 50%;
-			border: solid 4px $primary-color;
+			border: solid 4px lighten($primary-color, 8);
 			z-index: 4;
 		}
 	}

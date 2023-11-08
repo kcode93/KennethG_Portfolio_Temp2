@@ -203,7 +203,7 @@ header {
   .menu-nav {
     margin: 0;
     padding: 0;
-    background-color: #310d48;
+    background-color: #292929;
     opacity: 0.97;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-in-out; }
@@ -212,7 +212,7 @@ header {
   .menu-brand {
     margin: 0;
     padding: 0;
-    background-color: #310d48;
+    background-color: #148a9d;
     opacity: 0.97;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-in-out; }
@@ -226,7 +226,7 @@ header {
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 50%;
-      border: solid 4px #17a2b8;
+      border: solid 4px #1cc2dc;
       z-index: 4; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
