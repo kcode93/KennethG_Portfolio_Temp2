@@ -286,7 +286,8 @@ main {
   border-radius: 50%;
   border: 5px solid #17a2b8;
   width: 400px;
-  height: 400px; }
+  height: 400px;
+  padding: 0.5rem; }
 
 #about .bio {
   padding: 5rem;
@@ -377,7 +378,16 @@ a {
     transform: translate3d(100%, 0, 0); }
     .menu-brand .portrait {
       width: 200px;
-      height: 200px; } }
+      height: 200px; }
+  #about .about-info {
+    grid-template-areas: 'bio-img' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+    #about .about-info .bio-image {
+      padding: 0.5rem 0.5rem; }
+    #about .about-info .bio {
+      padding: 0.5rem 1rem; }
+      #about .about-info .bio p {
+        padding: 0.5rem 1rem; } }
 
 @media only screen and (max-width: 600px) {
   #home h1 {

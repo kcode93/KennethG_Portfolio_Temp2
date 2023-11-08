@@ -44,6 +44,31 @@
 			height: 200px;
 		}
 	}
+
+	#about {
+		.about-info {
+			.bio-image {
+				padding: 0.5rem 0.5rem;
+			}
+
+			.bio {
+				padding: 0.5rem 1rem;
+
+				p {
+					padding: 0.5rem 1rem;
+				}
+			}
+
+			grid-template-areas:
+				'bio-img'
+				'bio'
+				'job1'
+				'job2'
+				'job3';
+
+			grid-template-columns: 1fr;
+		}
+	}
 }
 
 //Small Devices & Phones
