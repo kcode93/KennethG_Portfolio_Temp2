@@ -43,7 +43,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	opacity: 0.9;
+	//opacity: 0.9;
 	visibility: hidden;
 	@include navItem_transition_delay;
 
@@ -67,8 +67,8 @@
 	&-nav {
 		margin: 0;
 		padding: 0;
-		background-color: darken($secondary-color, 6);
-		opacity: 0.8;
+		background-color: darken($secondary-color, 8);
+		opacity: 0.97;
 		//takes it off the view port upwards
 		transform: translate3d(0, -100%, 0);
 		@include ease-in-out;
@@ -82,7 +82,8 @@
 	&-brand {
 		margin: 0;
 		padding: 0;
-		background-color: darken($secondary-color, 10);
+		background-color: darken($secondary-color, 8);
+		opacity: 0.97;
 		//takes it off the view port downwards
 		transform: translate3d(0, 100%, 0);
 		@include ease-in-out;
@@ -101,6 +102,7 @@
 			background-size: cover;
 			border-radius: 50%;
 			border: solid 4px $primary-color;
+			z-index: 4;
 		}
 	}
 
