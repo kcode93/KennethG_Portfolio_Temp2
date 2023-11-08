@@ -69,11 +69,76 @@
 			grid-template-columns: 1fr;
 		}
 	}
+
+	#gallery {
+		h1 {
+			margin-top: 1rem;
+		}
+
+		.container {
+			width: 100%;
+			overflow: hidden;
+			margin: 1rem 0;
+			border: none;
+		}
+
+		.grid-gallery {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.image-details {
+			font-size: 1.1rem;
+		}
+
+		.btn {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			font-size: 0.9rem;
+			width: 9rem;
+			height: 4rem;
+		}
+
+		.btn i {
+			margin-bottom: 0.2rem;
+		}
+	}
 }
 
 //Small Devices & Phones
 @include Sm-Devices {
 	#home h1 {
 		max-resolution: 10vh;
+	}
+
+	#gallery {
+		.container {
+			width: 100%;
+			overflow: hidden;
+			margin: 1rem 0;
+			border: none;
+		}
+
+		.grid-gallery {
+			grid-template-columns: 1fr;
+		}
+
+		.image-details {
+			font-size: 1.4rem;
+		}
+
+		.btn {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.2rem;
+			width: 12rem;
+			height: 4rem;
+		}
+
+		.btn i {
+			margin-bottom: 0.5rem;
+		}
 	}
 }
