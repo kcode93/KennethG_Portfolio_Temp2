@@ -219,14 +219,14 @@ header {
     .menu-brand.show {
       transform: translate3d(0, 0, 0); }
     .menu-brand .portrait {
-      width: 300px;
-      height: 300px;
+      width: 500px;
+      height: 500px;
       background-image: url("../img/Profile_Pic.jpeg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 50%;
-      border: solid 4px #1cc2dc;
+      border: solid 6px #1cc2dc;
       z-index: 4; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -252,6 +252,9 @@ header {
         color: #17a2b8;
         border: 0.2rem solid #17a2b8; }
 
+main {
+  min-height: calc(100vh - $footer-height); }
+
 #home {
   padding: 4rem;
   height: 100%;
@@ -266,6 +269,10 @@ header {
       #home .icons a:hover {
         color: #17a2b8; }
 
+#about .lg-heading,
+#about .sm-heading {
+  padding: 0.5rem 2rem; }
+
 #about .about-info {
   font-size: 1.5rem;
   display: grid;
@@ -278,8 +285,8 @@ header {
   margin: auto;
   border-radius: 50%;
   border: 5px solid #17a2b8;
-  width: 500px;
-  height: 500px; }
+  width: 400px;
+  height: 400px; }
 
 #about .bio {
   padding: 5rem;
@@ -300,7 +307,9 @@ header {
   background-color: #272727;
   padding: 5rem;
   border-bottom: 5px solid #17a2b8;
-  border-right: 5px solid #17a2b8; }
+  border-right: 5px solid #17a2b8;
+  width: 80%;
+  margin: 0 auto 2rem auto; }
   #about .job h3,
   #about .job h4,
   #about .job h5,
@@ -308,6 +317,13 @@ header {
     margin: 0.5rem 0; }
   #about .job h5 {
     font-weight: bold; }
+
+#main-footer {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #17a2b8;
+  height: 65px; }
 
 h1,
 h2,

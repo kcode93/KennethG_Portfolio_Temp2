@@ -94,14 +94,14 @@
 		}
 
 		.portrait {
-			width: 300px;
-			height: 300px;
+			width: 500px;
+			height: 500px;
 			background-image: $profile-pic;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			border-radius: 50%;
-			border: solid 4px lighten($primary-color, 8);
+			border: solid 6px lighten($primary-color, 8);
 			z-index: 4;
 		}
 	}

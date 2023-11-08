@@ -1,3 +1,7 @@
+main {
+	@include sticky-footer;
+}
+
 #home {
 	padding: 4rem;
 	height: 100%;
@@ -21,6 +25,10 @@
 }
 
 #about {
+	.lg-heading,
+	.sm-heading {
+		padding: 0.5rem 2rem;
+	}
 	.about-info {
 		font-size: 1.5rem;
 		display: grid;
@@ -36,8 +44,8 @@
 		margin: auto;
 		border-radius: 50%;
 		border: 5px solid $primary-color;
-		width: 500px;
-		height: 500px;
+		width: 400px;
+		height: 400px;
 	}
 
 	.bio {
@@ -66,6 +74,8 @@
 		padding: 5rem;
 		border-bottom: 5px solid $primary-color;
 		border-right: 5px solid $primary-color;
+		width: 80%;
+		margin: 0 auto 2rem auto;
 
 		h3,
 		h4,

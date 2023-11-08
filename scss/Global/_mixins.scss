@@ -58,10 +58,15 @@
 }
 
 //dynamic background-color / color set
-@function set-text-color($background-color){
-	@if(lightness($background-color) > 40){
+@function set-text-color($background-color) {
+	@if (lightness($background-color) > 40) {
 		@return #000;
-	}@else{
+	} @else {
 		@return #fff;
 	}
+}
+
+//for sticky footer
+@mixin sticky-footer {
+	min-height: calc(100vh - $footer-height);
 }
