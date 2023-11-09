@@ -320,6 +320,39 @@ main#about {
   #about .job h5 {
     font-weight: bold; }
 
+#contact-section-A .text-fields {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message";
+  gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+  #contact-section-A .text-fields .name-input {
+    grid-area: name; }
+  #contact-section-A .text-fields .subject-input {
+    grid-area: subject; }
+  #contact-section-A .text-fields .email-input {
+    grid-area: email; }
+  #contact-section-A .text-fields .phone-input {
+    grid-area: phone; }
+  #contact-section-A .text-fields .message-input {
+    grid-area: message;
+    height: 100px; }
+  #contact-section-A .text-fields .text-input {
+    padding: 1rem 1.5rem;
+    border: 1px solid #000; }
+    #contact-section-A .text-fields .text-input:hover {
+      border-color: #17a2b8; }
+
+#contact-section-A button[type="submit"] {
+  width: 50%; }
+
+#contact-section-B .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center; }
+
+#contact-section-B h3 {
+  font-weight: bold; }
+
 #gallery .bar {
   margin-left: 2rem; }
 
@@ -455,6 +488,112 @@ a {
   margin: 0 1rem; }
   .btn:hover {
     border: 3px solid #fff; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.py-5 {
+  padding: 5rem 0; }
+
+.px-1 {
+  padding: 0 1rem; }
+
+.px-2 {
+  padding: 0 2rem; }
+
+.px-3 {
+  padding: 0 3rem; }
+
+.px-4 {
+  padding: 0 4rem; }
+
+.px-5 {
+  padding: 0 5rem; }
+
+.p-1 {
+  padding: 1rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.p-3 {
+  padding: 3rem; }
+
+.p-4 {
+  padding: 4rem; }
+
+.p-5 {
+  padding: 5rem; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.my-5 {
+  margin: 5rem 0; }
+
+.mx-1 {
+  margin: 0 1rem; }
+
+.mx-2 {
+  margin: 0 2rem; }
+
+.mx-3 {
+  margin: 0 3rem; }
+
+.mx-4 {
+  margin: 0 4rem; }
+
+.mx-5 {
+  margin: 0 5rem; }
+
+.m-1 {
+  margin: 1rem; }
+
+.m-2 {
+  margin: 2rem; }
+
+.m-3 {
+  margin: 3rem; }
+
+.m-4 {
+  margin: 4rem; }
+
+.m-5 {
+  margin: 5rem; }
+
+.bg-primary {
+  background-color: #17a2b8;
+  color: #000; }
+
+.bg-dark {
+  background-color: #1a1a1a;
+  color: #fff; }
+
+.bg-light {
+  background-color: #f1f1f1e7;
+  color: #000; }
+
+.bg-medium {
+  background-color: #49136b;
+  color: #fff; }
 
 @media only screen and (max-width: 800px) {
   #home {
