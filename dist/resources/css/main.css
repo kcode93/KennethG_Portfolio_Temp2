@@ -615,7 +615,7 @@ a {
   background-color: #49136b;
   color: #fff; }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1801px) {
   #gallery .container {
     width: 80%; }
   #gallery .btn {
@@ -628,7 +628,7 @@ a {
   #gallery .btn i {
     margin-bottom: 0.2rem; } }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1800px) {
   #about .bio-image {
     grid-area: bio-img;
     margin: auto;
