@@ -320,11 +320,17 @@ main#about {
   #about .job h5 {
     font-weight: bold; }
 
+#contact-section-A .container {
+  width: 80%;
+  margin: 0.5rem auto; }
+  #contact-section-A .container .btn {
+    margin-left: 0; }
+
 #contact-section-A .text-fields {
   display: grid;
   grid-template-areas: "name email" "subject phone" "message message";
   gap: 1.2rem;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 0.5rem; }
   #contact-section-A .text-fields .name-input {
     grid-area: name; }
   #contact-section-A .text-fields .subject-input {
@@ -338,17 +344,30 @@ main#about {
     height: 100px; }
   #contact-section-A .text-fields .text-input {
     padding: 1rem 1.5rem;
-    border: 1px solid #000; }
+    border: 4px solid #1a1a1a;
+    transition: all 0.5s ease-in-out; }
     #contact-section-A .text-fields .text-input:hover {
       border-color: #17a2b8; }
 
 #contact-section-A button[type="submit"] {
-  width: 50%; }
+  width: 25%; }
 
 #contact-section-B .contact-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center; }
+  #contact-section-B .contact-info div {
+    background-color: #272727;
+    padding: 5rem;
+    border-bottom: 8px solid #17a2b8;
+    border-right: 8px solid #17a2b8;
+    width: 80%;
+    margin: 0 auto 2rem auto; }
+    #contact-section-B .contact-info div i {
+      transition: all 0.5s ease-in-out; }
+      #contact-section-B .contact-info div i:hover {
+        color: #17a2b8;
+        transform: scale(1.5); }
 
 #contact-section-B h3 {
   font-weight: bold; }
@@ -485,7 +504,8 @@ a {
   display: inline-block;
   font-size: 1.2rem;
   transition: all 0.8s;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  cursor: pointer; }
   .btn:hover {
     border: 3px solid #fff; }
 

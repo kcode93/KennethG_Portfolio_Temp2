@@ -1,5 +1,14 @@
 #contact{
     &-section-A{
+        .container{
+            width: 80%;
+            margin: 0.5rem auto;
+            //border: 2px solid white;
+
+            .btn{
+                margin-left: 0;
+            }
+        }
         .text-fields {
                 display: grid;
                 grid-template-areas:
@@ -7,7 +16,7 @@
                     "subject phone"
                     "message message";
                 gap: 1.2rem;
-                margin-bottom: 1.2rem;
+                margin-bottom: 0.5rem;
         
                 //Grid Areas
                 .name-input {
@@ -33,7 +42,8 @@
         
                 .text-input {
                     padding: 1rem 1.5rem;
-                    border: 1px solid #000;
+                    border: 4px solid $dark-color;
+                    @include ease-in-out;
         
                     &:hover {
                         border-color: $primary-color;
@@ -42,7 +52,7 @@
             }
         
             button[type="submit"] {
-                width: 50%;
+                width: 25%;
             }
     }
 
@@ -51,6 +61,24 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             text-align: center;
+
+            div{
+                background-color: lighten($dark-color, 5);
+                    padding: 5rem;
+                    border-bottom: 8px solid $primary-color;
+                    border-right: 8px solid $primary-color;
+                    width: 80%;
+                    margin: 0 auto 2rem auto;
+
+                    i{
+                        @include ease-in-out;
+
+                        &:hover{
+                            color: $primary-color;
+                            transform: scale(1.5);
+                        }
+                    }
+            }
         }
 
         h3 {
