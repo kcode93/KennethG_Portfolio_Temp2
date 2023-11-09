@@ -1,9 +1,78 @@
 //Wide Screens
 @include Xl-Devices {
+	#gallery {
+		.container {
+			width: 80%;
+		}
+
+		.btn {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			font-size: 1.1rem;
+			width: 12rem;
+			height: 4.5rem;
+		}
+
+		.btn i {
+			margin-bottom: 0.2rem;
+		}
+	}
 }
 
 //Desktop & Laptops
 @include Lg-Devices {
+	#about {
+		.bio-image {
+			grid-area: bio-img;
+			margin: auto;
+			border-radius: 50%;
+			border: 5px solid $primary-color;
+			width: 400px;
+			height: 400px;
+			padding: 0.5rem;
+			margin-left: 1.5rem;
+		}
+
+		.job {
+			background-color: lighten($dark-color, 5);
+			padding: 3rem;
+			border-bottom: 8px solid $primary-color;
+			border-right: 8px solid $primary-color;
+			width: 100%;
+			margin: 0 auto 2rem auto;
+
+			h3,
+			h4,
+			h5,
+			p {
+				margin: 0.5rem 0;
+			}
+
+			h5 {
+				font-weight: bold;
+			}
+		}
+	}
+
+	#gallery {
+		.container {
+			width: 100%;
+		}
+
+		.btn {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			font-size: 0.9rem;
+			width: 9rem;
+			height: 4rem;
+		}
+
+		.btn i {
+			margin-bottom: 0.2rem;
+		}
+	}
 }
 
 //Tablets & Small Laptops
@@ -103,6 +172,31 @@
 			margin-bottom: 0.2rem;
 		}
 	}
+
+	#contact {
+		&-section-A {
+			.lg-heading {
+				font-size: 5rem;
+			}
+			.text-fields {
+				display: flex;
+				flex-direction: column;
+			}
+
+			button[type='submit'] {
+				display: block;
+				width: 100%;
+				margin-top: 0;
+			}
+		}
+
+		&-section-B {
+			.contact-info {
+				grid-template-columns: 1fr;
+				font-size: 1.5rem;
+			}
+		}
+	}
 }
 
 //Small Devices & Phones
@@ -139,6 +233,31 @@
 
 		.btn i {
 			margin-bottom: 0.5rem;
+		}
+	}
+
+	#contact {
+		&-section-A {
+			.lg-heading {
+				font-size: 5rem;
+			}
+			.text-fields {
+				display: flex;
+				flex-direction: column;
+			}
+
+			button[type='submit'] {
+				display: block;
+				width: 100%;
+				margin-top: 0;
+			}
+		}
+
+		&-section-B {
+			.contact-info {
+				grid-template-columns: 1fr;
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
